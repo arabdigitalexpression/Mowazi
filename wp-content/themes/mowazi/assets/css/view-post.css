@@ -1,0 +1,273 @@
+.sidebar-sticky .card-clone{
+    box-shadow: none;
+    background-color: #F8FAFD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.sidebar-sticky .card-clone img{
+    width: 35px;
+    height: 30px;
+}
+
+.sidebar-sticky .card-clone p{
+    text-align: center;
+    margin: 15px 0;
+    color: #0060e2;
+    line-height: 22px;
+    font-size: 12px;
+}
+.sidebar-sticky .card-clone .btn{
+    margin: 0 auto !important;
+}
+.sidebar-sticky .card-clone .btn i{
+    vertical-align: middle;
+}
+.sidebar-sticky .card-author_history{
+    box-shadow: none;
+}
+.view-content{
+    margin-bottom: 80px;
+}
+
+.view-content .activities-attached .content-home-page-card{
+    box-shadow: 0px 3px 6px #00000029;
+    margin-bottom: 40px;
+}
+.view-content .post-controls{
+    display: flex;
+    /* align-items: center; */
+}
+.view-content .post-controls .post-views-count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3px;
+}
+.view-content .post-controls img{
+    width: 28px;
+    height: 28px;
+    fill: #707070;
+}
+.view-content .post-controls .post-views{
+    /* position: absolute;
+    bottom: -30px;
+    left: 7px; */
+}
+.view-content .post-controls .post-views span{
+    font-size: 16px;
+    padding: 0;
+    margin-top: -5px;
+    font-family: 'DiodrumArabic-Medium';
+    color: #707070;
+}
+.view-content .post-controls .dropdown{
+    margin-left: 5px;
+}
+.view-content .post-controls .share-button{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 24px;
+    outline: 0;
+    color: #707070;
+}
+.view-content .post-controls .share-button:after{
+    display: none;
+}
+.view-content .post-controls .dropdown-menu{
+    width: fit-content;
+    padding: 0px 10px;
+    min-width: unset;
+    height: 135px;
+    top: -20px !important;
+    left: 30px !important;
+    height: auto;
+}
+.view-content .post-controls .dropdown-menu.show{
+    display: flex;
+    align-items: center;
+    direction: ltr;
+}
+.view-content .post-controls .dropdown-menu .copy-link{
+    border-radius: 50%;
+    padding: 0.5px 11px;
+    background-color: #FFC055;
+    border:none;
+    box-shadow: none;
+}
+.view-content .post-controls .dropdown-menu .copy-link i{
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.view-content .post-controls .dropdown-menu .mashsb-buttons{
+    flex-wrap: nowrap;
+}
+.view-content .post-controls .mash-small{
+    border-radius: 50%;
+    flex: unset;
+    padding: 10px !important;
+    margin: 0;
+    margin-right: 5px;
+}
+.view-content .post-controls .mashicon-twitter .icon::before{
+    margin-right: 2px !important;
+}
+.view-content .post-controls .mash-small .icon::before{
+    margin: 0;
+}
+.view-content .post-controls .mash-small .text{
+   display: none;
+}
+
+.view-content .view-content_container .view-content__container_footer{
+    border: none;
+}
+.view-content .report-us span{
+    margin-right: 10px;
+}
+.view-content .report-us i{
+    font-size: 14px;
+}
+.view-content .report-btn{
+    color: #000;
+    border-color: #000;
+}
+
+
+.view-content__comments_container{
+    background-color: #fff;
+    padding: 35px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+.view-content__comments_container .form-comment{
+    background-color: #EAEFF5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.view-content__comments_container .form-group_comment{
+    background-color: #EAEFF5!important;
+    width: 100%;
+    border: none;
+}
+.view-content__comments_container .form-group_comment textarea{
+    border: none;
+}
+.view-content__comments_container .form-group_comment textarea::placeholder{
+    color: #0060E2;
+}
+.view-content__comments_container .form-group_comment textarea:placeholder-shown{
+    color: #0060E2;
+}
+.view-content__comments_container .form-comment .btn-sm{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.view-content__comments_container .card-comment{
+    margin-top: 30px;
+}
+.view-content__comments_container .card-comment .comment-details_wrapper{
+    background-color: #F8FAFD;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    justify-content: flex-start;
+}
+.view-content__comments_container .card-comment .card-body{
+    background-color: #F8FAFD;
+    
+}
+
+.view-content__comments_container .form-reply-comment{
+    background-color: #EAEFF5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.view-content__comments_container .form-reply-comment .form-group_comment{
+    border: none;
+}
+.view-content__comments_container .form-reply-comment .btn-sm{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.view-content__comments_container .card-comment_reply{
+    background-color: #f7fafd !important;
+    border: none !important;
+    margin-top: 5px;
+}
+.view-content__comments_container .comment-details_wrapper .info-title{
+    color: #0060E2 !important;
+    font-family: 'DiodrumArabic-Medium';
+    font-weight: bold;
+    font-size: 14px;
+}
+.view-content__comments_container .comment-details_wrapper .comment-time{
+    margin-right: 20px;
+    align-items: center;
+}
+
+.view-content .post-tags{
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+.view-content .post-tags .tags-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.view-content .post-tags .tag{
+    border-radius: 4px;
+    padding: 5px;
+}
+.view-content .post-tags h4{
+    font-size: 16px;
+    line-height: 55px;
+}
+
+.view-content .suggestion{
+    margin: 14px 0;
+}
+
+.view-content .related-posts{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+.view-content .mz-mb-35{
+    width: 100%;
+    max-width: 100%;
+    flex: unset;
+    margin-bottom: 0px !important;
+}
+.view-content #related-tabs{
+    border: none;
+}
+.view-content #related-tabs .nav-item{
+    border-radius: 20px;
+    border:1px solid;
+    margin-left: 15px;
+}
+@media (max-width: 40em) {
+    .view-content #related-tabs .nav-item{
+        margin-left: 5px;
+    }
+}
+.view-content #related-tabs .nav-item.active{
+    color: #2263DA;
+}
+.view-content #related-tabsContent{
+    margin-top: 25px;
+}
+.view-content #related-tabsContent .no-related-content{
+    padding: 15px
+}

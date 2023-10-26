@@ -1,0 +1,107 @@
+#about-banner{
+background-color: #EAEFF5;
+padding-top: 85px;
+padding-bottom: 50px;
+}
+@media (max-width:40em) {
+    #about-banner{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#about-banner .banner-content{
+    color: #000033;
+}
+
+#about-banner .banner-title{
+    margin-bottom: 40px;
+    font-family: 'DiodrumArabic-Medium';
+    font-size: 33px;
+    line-height: 55px;
+}
+@media (max-width:40em) {
+    #about-banner .banner-title{
+        font-size: 28px;
+        line-height: 45px;
+    }
+}
+
+#about-banner .banner-text{
+    font-size: 18px;
+    line-height: 34px;
+}
+@media (max-width:40em) {
+    #about-banner .banner-text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+
+#why-join-mowazi{
+    background-color: #EAEFF5;
+    padding-top: 85px;
+    padding-bottom: 50px;
+}
+@media (max-width:40em) {
+    #why-join-mowazi{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#why-join-mowazi .image-or-video{
+    margin-bottom: 70px;
+}
+#why-join-mowazi img{
+    width: 100%;
+    display: block;
+    margin:  0 auto;
+}
+@media (max-width: 40em) {
+    #why-join-mowazi .image-or-video{
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 40em) {
+    #why-join-mowazi iframe{
+        height: auto;
+    }
+}
+
+#why-join-mowazi .container-content{
+    color: #000033;
+}
+
+#why-join-mowazi .container-title{
+    margin-bottom: 40px;
+    font-family: 'DiodrumArabic-Medium';
+    font-size: 33px;
+    line-height: 55px;
+}
+@media (max-width:40em) {
+    #why-join-mowazi .container-title{
+        font-size: 28px;
+        line-height: 45px;
+    }
+}
+
+#why-join-mowazi .container-text{
+    font-size: 18px;
+    line-height: 34px;
+}
+@media (max-width:40em) {
+    #why-join-mowazi .container-text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+.about-testimonals{
+    background-color: #EAEFF5 !important;
+    margin-top: -2px;
+}
+.about-testimonals.white{
+    background-color: white !important;
+}

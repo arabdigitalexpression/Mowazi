@@ -1,0 +1,204 @@
+.suggestion-card{
+    /* margin-bottom: 10px; */
+    border-radius: 8px;
+}
+
+.why-mowazi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 8px;
+    background-color: #F8FAFD;
+}
+
+@media (max-width: 40em) {
+    .why-mowazi{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}
+
+.suggestion-card-title{
+    flex: 2;
+    color: #0060E2;
+}
+.suggestion-card-title h2{
+    font-size: 24px;
+    line-height: 55px;
+}
+.suggestion-card-title p{
+    font-size: 14px;
+    line-height: 26px;
+}
+.suggestion-card-content{
+    flex: 3;
+}
+.suggestion-card-content .items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.suggestion-card-content .item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #0060E2;
+}
+.suggestion-card-content .item img{
+    width: 55px;
+    height: 55px;
+}
+.suggestion-card-content .item .item-text{
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.subscribe-mowazi{
+    background-color: #0060E2;
+    padding: 30px 40px;
+    border-radius: 8px;
+}
+
+.subscribe-mowazi .form-group.news{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}
+.subscribe-mowazi .form-group.news label{
+    flex: 6;
+    margin-bottom: 0;
+}
+.subscribe-mowazi .form-group.news h2{
+    font-size: 20px;
+    line-height: 55px;
+    color: white;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news h2{
+        line-height: 25px;
+        margin-bottom: 2rem;
+    }
+}
+.subscribe-mowazi .form-group.news .email-input{
+    padding: 0;
+    flex: 4;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news .email-input{
+        margin-left: 20px;
+    }
+}
+.subscribe-mowazi .form-group.news .email-input input{
+    width: 90%;
+    padding: 5px 10px;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news .email-input input{
+        width: 100%;
+    }
+}
+.subscribe-mowazi .form-group.news input::placeholder{
+    font-size: 14px;
+    color: white;
+}
+.subscribe-mowazi .form-group.news button{
+    position: static;
+    width: auto;
+    flex: 1;
+    font-size: 14px;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news button{
+        position: absolute;
+        left: 22px;
+    }
+}
+.subscribe-mowazi .form-group.news .help-block{
+    position: absolute;
+    bottom: -10px;
+    left: 120px;
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news.has-error button{
+        bottom: 0;
+    }
+}
+@media (max-width: 40em) {
+    .subscribe-mowazi .form-group.news .help-block{
+        bottom: -20px;
+        left: 88px;
+    }
+}
+
+.suggest-content{
+    background-color: #ffc15733;
+    padding: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 40em) {
+    .suggest-content{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+.suggest-content .suggestion-card-text{
+    flex: 3;
+    color: #0060E2;
+}
+@media (max-width: 40em) {
+    .suggest-content .suggestion-card-text{
+        flex: unset;
+        text-align: center;
+    }
+}
+.suggest-content .suggestion-card-text h2{
+    font-size: 28px;
+    line-height: 55px;
+}
+@media (max-width: 40em) {
+    .suggest-content .suggestion-card-text h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+.suggest-content .suggestion-card-text p{
+    font-size: 14px;
+}
+@media (max-width: 40em) {
+    .suggest-content .suggestion-card-text p{
+        line-height: 25px;
+        margin-bottom: 2rem;
+    }
+}
+.suggest-content .btn{
+    flex: 1;
+    color: #0060E2;
+    border-color: #0060E2;
+}
+@media (max-width: 40em) {
+    .suggest-content .btn{
+        flex: unset;
+    }
+}
+.suggest-content .btn:hover{
+    background-color: #0060E2;
+    color: white;
+}

@@ -1,0 +1,62 @@
+.nav-archive .nav-item{
+    position: relative;
+}
+.nav-archive .dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.nav-archive .dropdown-toggle{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    font-family: "DiodrumArabic-Medium", "sans-serif";
+    color: black;
+}
+.nav-archive .dropdown-toggle::after{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.nav-archive .dropdown-menu{
+    width: 100%;
+    right: -20px;
+    /* top: 5px !important; */
+}
+.nav-archive .dropdown-menu .dropdown-item{
+    text-align: center;
+}
+
+.nav-register .btn-outline-light{
+    color: #fff;
+}
+
+.form-group-relative{   /*or any relative div */
+    position: relative;
+}
+.form-group-relative:hover .field-info-popup{
+    opacity: 1;
+}
+.field-info-popup{
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    background-color: #333333;
+    color: #F8FAFD;
+    border-radius: 4px;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+.field-info-popup .triangle{
+    position: absolute;
+    top: -10px;
+    left: 43%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #333333;
+}
+.field-info-popup p{
+    margin-bottom: 0;
+    font-size: 12px;
+}

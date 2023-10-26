@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2021 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="location-outline" unicode="&#xe800;" d="M416 741q-128 0-221-90-91-88-91-216 0-126 91-215l221-219 223 219q90 88 90 215 0 129-90 216-93 90-223 90z m0 104q174 0 295-120t122-290-122-290l-295-290-293 290q-123 120-123 290t123 290 293 120z m0-286q-52 0-91-39t-39-92 39-92q38-37 91-37 55 0 93 37 39 39 39 92t-39 92-93 39z m0 52q75 0 129-53t54-129-54-129-129-54-128 54-54 129 54 129 128 53z" horiz-adv-x="833" />
+
+<glyph glyph-name="instagram" unicode="&#xf32d;" d="M690 350q0 26-6 50l176 0 0-344q0-56-39-96t-95-40l-592 0q-56 0-95 40t-39 96l0 344 174 0q-4-32-4-50 0-106 76-183t184-77q106 0 183 77t77 183z m36 430q56 0 95-39t39-95l0-146-218 0q-78 110-212 110-138 0-212-110l-218 0 0 146q0 56 39 95t95 39l592 0z m64-166l0 72q0 24-24 24l-72 0q-24 0-24-24l0-72q0-8 7-16t17-8l72 0q24 0 24 24z m-200-264q0-66-47-113t-113-47-113 47-47 113q0 68 47 114t113 46 113-46 47-114z" horiz-adv-x="860" />
+</font>
+</defs>
+</svg>

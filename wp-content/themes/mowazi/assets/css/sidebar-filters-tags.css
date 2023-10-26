@@ -1,0 +1,105 @@
+.sidebar-sticky .cancel-filters{
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.3s;
+}
+.sidebar-sticky .cancel-filters:hover{
+    color: #FFC055;
+    font-size: 14px;
+}
+
+.sidebar-sticky .form-group_search__filter{
+    flex: unset;
+    width: 100%;
+}
+.sidebar-sticky .filters-container{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.sidebar-sticky .tags-container{
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.user-content-tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.user-content-tabs .btn{
+    align-items: center;
+    display: flex;
+    padding: 10px 0;
+}
+.user-content-tabs .btn i{
+    margin-left: 20px;
+    font-size: 10px;
+    width: 20px;
+}
+.user-content-tabs .btn i.icon-bookmark::before{
+    display: none;
+}
+.user-content-tabs .btn i.icon-bookmark::after{
+    position: static;
+}
+
+.filter-item{
+    position: relative;
+}
+.filter-item:last-of-type{
+    margin-bottom: 0;
+}
+
+.filter-item label{
+    color: #777777;
+    font-size: 0.5714285714rem;
+    margin-bottom: 0;
+}
+.filter-item .form-group{
+    width: 100%;
+
+}
+.filter-item .dropdown-toggle{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    outline: 0;
+}
+.filter-item .dropdown-toggle:focus{
+    outline: 0;
+}
+.filter-item .dropdown-toggle::after{
+    color: #777777;
+}
+.filter-item .dropdown-menu{
+    width: 100% !important;
+    right: 0px;
+    padding: 5px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    overflow-y: scroll;
+    max-height: 200px;
+}
+.filter-item .dropdown-menu .dropdown-item{
+    padding: 0.5rem 10px
+}
+.filter-item .dropdown-menu .dropdown-item:hover{
+    background-color: #5897fb !important;
+}
+.filter-item .dropdown-menu .dropdown-item.active{
+    background-color: #FFC055 !important;
+}

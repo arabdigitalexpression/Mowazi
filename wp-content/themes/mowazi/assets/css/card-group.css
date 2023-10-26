@@ -1,0 +1,57 @@
+:nth-child(1) { --nth-child: 0 }
+:nth-child(2) { --nth-child: 1 }
+:nth-child(3) { --nth-child: 2 }
+
+
+.card-mo-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 30px;
+    box-shadow: none !important;
+}
+.card-mo-group .group-info .avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.card-mo-group .group-info .info-title{
+    margin: 0;
+    margin-right: 35px;
+}
+@media (max-width: 40em) {
+    .card-mo-group .group-info .info-title{
+        margin-right: 15px;
+    }
+}
+.card-mo-group .group-info .members-count{
+    margin-right: 35px;
+}
+@media (max-width: 40em) {
+    .card-mo-group .group-info .members-count{
+        margin-right: 15px;
+    }
+}
+.card-mo-group .group-info .members-count .info-subtitle{
+    margin: 0;
+    color: #707070;
+    font-size: 12px;
+}
+.card-mo-group .group-members{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 35px;
+}
+@media (max-width: 40em) {
+    .card-mo-group .group-members{
+        margin-right: 15px;
+    }
+}
+.card-mo-group .group-members .get-profile:not(:first-of-type){
+    position: absolute;
+    top: 0;
+    right: calc(var(--nth-child)*20px);
+    z-index: 2;
+}

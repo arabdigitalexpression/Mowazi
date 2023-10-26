@@ -1,0 +1,21 @@
+.archive-listing .row{
+    flex-direction: column;
+}
+.archive-listing .col-md-6{
+    /* margin-bottom: 0 !important; */
+    width: 100%;
+    flex: unset;
+    max-width: 100%;
+}
+.archive-listing .mz-mb-35 {
+    margin-bottom: 10px !important;
+}
+
+
+
+.tags-archive-listing .mz-mb-35{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px !important;
+    flex: unset;
+}

@@ -1,0 +1,13 @@
+@import "../themes/mowazi/assets/css/style.css";
+@import "../themes/mowazi/style.css";
+
+
+
+,table.tableAccording {
+  border-collapse: collapse;
+  width: 100%;
+}
+,.tableAccording tr,.tableAccording td{
+	border:1px solid #e1e1e1;
+	padding: 10px 5px;
+}

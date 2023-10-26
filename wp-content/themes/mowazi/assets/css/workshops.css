@@ -1,0 +1,31 @@
+.workshop-activity-card{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative;
+}
+.save-workshop-activity{
+    position: absolute;
+    left: 10px;
+}
+
+.workshop-activity-card_info{
+    display: flex;
+}
+.workshop-activity-date span{
+    direction: ltr;
+}
+.workshop-activity-card_info_block{
+    margin-left: 50px;
+}
+.workshop-activity-card_info_block p{
+    display: flex;
+    align-items: center;
+}
+.workshop-activity-card_info_block i{
+    margin-left: 10px;
+}
+
+.workshop_partition_content.expand-workshop-component .workshop-content{
+    display: none;
+}
