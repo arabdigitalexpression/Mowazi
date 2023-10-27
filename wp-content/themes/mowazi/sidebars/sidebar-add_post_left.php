@@ -49,10 +49,12 @@ $post_comments = get_comments( array(
 
 $post_activities = get_post_meta($post_id ,'activities', true);
 $post_activities_titles = array();
-foreach ($post_activities as $act_id){
-    $post_activity_title = get_post($act_id) -> post_title;
-    $post_activity_url = get_permalink($act_id);
-    array_push($post_activities_titles, array($post_activity_url, $post_activity_title));
+if ($post_activities) {
+    foreach ($post_activities as $act_id){
+        $post_activity_title = get_post($act_id) -> post_title;
+        $post_activity_url = get_permalink($act_id);
+        array_push($post_activities_titles, array($post_activity_url, $post_activity_title));
+    }
 }
 // echo $post_activity_titles;
 ?>
