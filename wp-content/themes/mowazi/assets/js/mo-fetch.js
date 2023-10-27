@@ -1979,7 +1979,6 @@ function bookmarkPost(e) {
 					addClasse(parent, 'bookmarked');
 				} else {
 					removeClasse(parent, 'bookmarked');
-					get_closest_parent(el, '.col-md-6').remove();
 				}
 
 				toastInit('success_toast', data.message);
