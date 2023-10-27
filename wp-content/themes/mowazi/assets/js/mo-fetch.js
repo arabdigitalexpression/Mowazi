@@ -1088,6 +1088,8 @@ function publishWorkshop(e) {
 			select2dropDown();
 			bsValidatorInit();
 			// document.location.replace(data.url);
+			jQuery(".loading-wrapper").removeClass('d-none');
+			window.location.reload();
 		})
 		.catch(function (error) {
 			if (error.name !== 'AbortError') {
