@@ -313,7 +313,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group form-group_alt ">
-                                        <textarea class="form-control" name="goals" placeholder="الاهداف" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا"></textarea>
+                                        <textarea class="form-control" name="goals" placeholder="الاهداف" ></textarea>
                                     </div>
                                 </form>
                             </div>
