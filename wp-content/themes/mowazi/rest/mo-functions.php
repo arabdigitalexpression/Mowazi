@@ -95,6 +95,11 @@ function mo_register_user( $register_info ) {
 function mo_validate_username( $username ) {
 	$valid = username_exists($username);
 
+	
+	if ($username == trim($username) && strpos($username, ' ') !== false) {        
+		return false;
+	}
+
 	// if user does not exist
 	if (!$valid) {
 		return true;
