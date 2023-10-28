@@ -2251,6 +2251,7 @@ function updateUser(e) {
 			}
 		})
 		.then(function (data) {
+			jQuery('.loading-wrapper').addClass('d-none');
 			toastInit('success_toast', data.message);
 			console.log(data);
 		})
