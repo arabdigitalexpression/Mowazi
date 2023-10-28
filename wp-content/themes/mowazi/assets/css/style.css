@@ -1241,7 +1241,7 @@ body.fixed-sidebar { overflow: hidden; }
 
 body.fixed-sidebar main { height: 100vh; overflow: scroll; }
 
-body.fixed-sidebar .sidebar { position: fixed; top: 135px; left: 0; width: 276px; }
+body.fixed-sidebar .sidebar { position: sticky; top: 135px; left: 0; width: 276px; }
 
 body.fixed-sidebar > footer, body.fixed-sidebar #nav_wrap.main_nav ~ footer { display: none; }
 
