@@ -2314,7 +2314,7 @@ function uploadAttach(e) {
 		})
 		.then(function (data) {
 			toastInit('success_toast', data.message);
-			jQuery('.wrapper-file-added').remove();
+			jQuery('.will-remove').remove();
 			if(!data.type){
 				data.type='Link';
 			}
