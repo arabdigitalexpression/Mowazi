@@ -1088,6 +1088,8 @@ function publishWorkshop(e) {
 			select2dropDown();
 			bsValidatorInit();
 			// document.location.replace(data.url);
+			jQuery(".loading-wrapper").removeClass('d-none');
+			window.location.reload();
 		})
 		.catch(function (error) {
 			if (error.name !== 'AbortError') {
@@ -1977,7 +1979,6 @@ function bookmarkPost(e) {
 					addClasse(parent, 'bookmarked');
 				} else {
 					removeClasse(parent, 'bookmarked');
-					get_closest_parent(el, '.col-md-6').remove();
 				}
 
 				toastInit('success_toast', data.message);
@@ -2610,6 +2611,22 @@ function clonePost(e) {
 			}
 		});
 }
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth() + 1; //January is 0!
+var yyyy = today.getFullYear() - 11;
+
+if (dd < 10) {
+   dd = '0' + dd;
+}
+
+if (mm < 10) {
+   mm = '0' + mm;
+} 
+
+today = yyyy + '-' + mm + '-' + dd;
+document.getElementById("bdate").setAttribute("max", today);
+
 jQuery(".postioning-toast").on('click', function(){
     jQuery(this).children().remove();
 });

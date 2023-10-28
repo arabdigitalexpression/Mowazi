@@ -52,14 +52,15 @@ $post_date_y = get_the_date('Y', $post_id);
 
 $post_excerpt = wp_trim_excerpt('', $post_id);
 $post_tags = get_the_tags($post_id);
-//sorting tags
 if ( $post_tags && ! is_wp_error( $post_tags ) ) {
+    //sorting tags
     usort( $post_tags, function( $a, $b ) {
         return $b->count - $a->count; // Swap $a and $b for ascending order.
     } );
-}
-$post_tags_four = array_slice($post_tags, 0, 4);
 
+    // get first 4 tags
+    $post_tags_four = array_slice($post_tags, 0, 4);
+}
 
 $participants = get_post_meta( $post_id, 'mo_workshop_activity_participants', true );
 $maxParticipants = get_post_meta( $post_id, 'mo_workshop_activity_max_participants', true );
