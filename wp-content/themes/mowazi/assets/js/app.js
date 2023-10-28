@@ -157,21 +157,24 @@ function copyTextToClipboard(text) {
 				},
 			})
 			.on('success.form.bv', function (e) {
-				// Prevent form submission
-				e.preventDefault();
-				e.stopImmediatePropagation();
-				var password = jQuery(
-					'form#changePassForm input[name=typePass]'
-				).val();
-				var data = {
-					type: 'GET',
-					action: 'change_password',
-					password: password,
-				};
-				$.post(ajax_handler, data, function (response) {
-					$('#changePass').modal('toggle');
-				});
-			});
+                jQuery(".loading-wrapper").removeClass('d-none');
+                // Prevent form submission
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var password = jQuery(
+                    'form#changePassForm input[name=typePass]'
+                ).val();
+                var data = {
+                    type: 'GET',
+                    action: 'change_password',
+                    password: password,
+                };
+                $.post(ajax_handler, data, function (response) {
+                    jQuery(".loading-wrapper").addClass('d-none');
+                    toastInit('success_toast', 'لقد تم تغيير كلمة السر بنجاح');
+                    $('#changePass').modal('toggle');
+                });
+            });
 		/// end of change password form
 
 		$(document).on('click', 'a[href="#"]', function (e) {
@@ -749,7 +752,9 @@ function copyTextToClipboard(text) {
 			ele.siblings('a').toggleClass('d-none');
 
 			$.each(input, function (index, val) {
-				if (val.getAttribute('disabled') == 'disabled') {
+				if (val.getAttribute('type') == 'password') {
+				}
+				else if (val.getAttribute('disabled') == 'disabled') {
 					val.removeAttribute('disabled');
 				} else {
 					val.setAttribute('disabled', 'disabled');
