@@ -2612,7 +2612,6 @@ function clonePost(e) {
 			}
 		});
 }
-
 jQuery(".postioning-toast").on('click', function(){
     jQuery(this).children().remove();
 });
