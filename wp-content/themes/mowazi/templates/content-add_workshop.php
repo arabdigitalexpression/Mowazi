@@ -78,7 +78,7 @@ if ( $post_type == 'workshops' || $post_type == 'activities' ) {
                     ?>
                 </div>
             </div>
-            <button onclick="toggleExpandAll(this)"><i class="icon-notes"></i> expand/collapse all</button>
+            <button onclick="toggleExpandAll(this)"><i class="icon-notes" title="expand/collapse all"></i></button>
 
             <div class="workshop-content_wrapper">
                 <div class="tab-content">
