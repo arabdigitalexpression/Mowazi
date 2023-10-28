@@ -95,6 +95,11 @@ function mo_register_user( $register_info ) {
 function mo_validate_username( $username ) {
 	$valid = username_exists($username);
 
+	
+	if ($username == trim($username) && strpos($username, ' ') !== false) {        
+		return false;
+	}
+
 	// if user does not exist
 	if (!$valid) {
 		return true;
@@ -1448,7 +1453,7 @@ function mo_get_search_side( $request_info ) {
 	$output_html = '';
 
 	$result_posts_args = array(
-		'post_type'         =>  array( 'activities', 'workshops' ),
+		'post_type'         =>  array( 'activities' ),
 		'post_status'       =>  'publish',
 		'posts_per_page'    =>  -1,
 		//'post_parent'       =>  0,
