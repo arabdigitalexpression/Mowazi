@@ -111,35 +111,33 @@ foreach ($post_activities as $act_id){
                                         var url = window.location.href;
                                         url = url.replace("?c=edit", "");
                                         jQuery('.left-side_info select[name="participants"]').on('change',function(){
+                                            var change_val = this.value;
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: { ajax1: 1, minParticipants: this.value }
                                             }).done(function( msg ) { 
-                                                jQuery('.participants-content #minParticipants').text(this.value);
-                                                jQuery('[data-post-info="participants"]').fadeOut();
+                                                document.getElementById("maxParticipants").innerHTML = change_val;
                                                 var php = "<?php if( isset($_POST['ajax1']) && isset($_POST['minParticipants']) ){
                                                         $min = $_POST['minParticipants'];
                                                         update_post_meta($post_id, 'mo_workshop_activity_participants', $min);
                                                         exit;
                                                     } ?>";
-                                                setTimeout(function(){ location.reload(); }, 1000);
                                             });
                                             
                                             
                                         });
                                         jQuery('.left-side_info select[name="maxParticipants"]').on('change',function(){
+                                            var change_val = this.value;
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: { ajax2: 1, maxParticipants: this.value }
                                             }).done(function( msg ) { 
-                                                jQuery('.participants-content #maxParticipants').text(this.value);
-                                                jQuery('[data-post-info="participants"]').fadeOut();
+                                                document.getElementById("minParticipants").innerHTML = change_val;
                                                 var php = "<?php if( isset($_POST['ajax2']) && isset($_POST['maxParticipants']) ){
                                                         $max = $_POST['maxParticipants'];
                                                         update_post_meta($post_id, 'mo_workshop_activity_max_participants', $max);
                                                         exit;
                                                     } ?>"
-                                                setTimeout(function(){ location.reload(); }, 1000);
                                             });
                                             
                                             
@@ -154,7 +152,7 @@ foreach ($post_activities as $act_id){
                 if ( !empty( $post_age_range ) ) { ?>
                     <div class="block-content_side age_range-content">
                         <h2>السن  <i class="icon-edit" data-edit-post='age_range'></i></h2>
-                        <div>
+                        <div class="cont_c">
                             <i class="icon-icon-group"></i>
                             <?php echo wpautop( $post_age_range ); ?>
                         </div>
@@ -169,18 +167,18 @@ foreach ($post_activities as $act_id){
                                     </select>
                                     <script type="text/javascript">
                                         jQuery('.left-side_info select[name="age"]').on('change',function(){
+                                            var change_val = this.value;
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: { ajax: 2, age: this.value }
                                             }).done(function( msg ) { 
-                                                jQuery('.age_range-content p').text(this.value);
-                                                jQuery('[data-post-info="age_range"]').fadeOut();
+                                                toastInit('success_toast', 'السن '+change_val);
+                                                jQuery('.age_range-content .cont_c p').text(change_val);
                                                 var php = "<?php if( isset($_POST['ajax']) && isset($_POST['age']) ){
                                                         $age = $_POST['age'];
                                                         update_post_meta($post_id, 'mo_workshop_activity_age', $age);
                                                         exit;
                                                     } ?>";
-                                                setTimeout(function(){ location.reload(); }, 1000);
                                             });
                                             
                                         });
@@ -215,34 +213,34 @@ foreach ($post_activities as $act_id){
                                     </select>
                                     <script type="text/javascript">
                                         jQuery('.left-side_info select[name="durationHrs"]').on('change',function(){
+                                            var change_val = this.value;
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: { ajax3: 1, durationHrs: this.value }
                                             }).done(function( msg ) { 
-                                                //jQuery('.duration-content p').text(this.value);
-                                                jQuery('[data-post-info="duration"]').fadeOut();
+                                                toastInit('success_toast', 'الساعات '+change_val);
+                                                jQuery('.duration-content p').first().text(change_val);
                                                 var php ="<?php if( isset($_POST['ajax3']) && isset($_POST['durationHrs']) ){
                                                         $durationHrs = $_POST['durationHrs'];
                                                         update_post_meta($post_id, 'mo_workshop_activity_duration_hrs', $durationHrs);
                                                         exit;
                                                     } ?>"
-                                                setTimeout(function(){ location.reload(); }, 1000);
                                             });
                                             
                                         });
                                         jQuery('.left-side_info select[name="durationMin"]').on('change',function(){
+                                            var change_val = this.value;
                                             jQuery.ajax({
                                                 type: "POST",
                                                 data: { ajax4: 1, durationMin: this.value }
                                             }).done(function( msg ) { 
-                                                //jQuery('.duration-content p').text(this.value);
-                                                jQuery('[data-post-info="duration"]').fadeOut();
+                                                toastInit('success_toast', 'الدقائق '+change_val);
+                                                jQuery('.duration-content p').last().text(change_val);
                                                 var php ="<?php if( isset($_POST['ajax4']) && isset($_POST['durationMin']) ){
                                                         $durationMin = $_POST['durationMin'];
                                                         update_post_meta($post_id, 'mo_workshop_activity_duration', $durationMin);
                                                         exit;
                                                     } ?>"
-                                                setTimeout(function(){ location.reload(); }, 1000);
                                             });
                                             
                                         });
