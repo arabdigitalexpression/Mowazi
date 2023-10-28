@@ -28,7 +28,7 @@ if (!$post_title) {
 
                 <div class="container-post__center">
                     <div class="form-group form-group_alt_post">
-                      <input type="text" value="<?php echo $post_title; ?>" name="title" class="form-control" placeholder="العنوان">
+                      <input type="text" value="<?php echo $post_title; ?>" name="title" class="form-control" placeholder="العنوان" disabled>
                     </div>
                 </div>
 
