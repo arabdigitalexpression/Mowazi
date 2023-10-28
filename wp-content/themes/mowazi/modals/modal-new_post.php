@@ -72,7 +72,7 @@
                                                     <div class="participantsContainer-content">
                                                         <div class="form-group_post">
                                                             <i class="icon-icon-users"></i>
-                                                            <select style="width: 100%;" name="participants" data-placeholder="الحد الأدنى" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
+                                                            <select id="min_participants" style="width: 100%;" name="participants" data-placeholder="الحد الأدنى" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
                                                                 <option></option>
                                                                 <?php foreach ( mo_generate_participants_range() as $key => $value ) { ?>
                                                                 <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
@@ -83,7 +83,7 @@
                                                     <div class="participantsContainer-content">
                                                         <div class="form-group_post">
                                                             <i class="icon-icon-users"></i>
-                                                            <select style="width: 100%;" name="maxParticipants" data-placeholder="الحد الأقصى" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
+                                                            <select id="max_participants" style="width: 100%;" name="maxParticipants" data-placeholder="الحد الأقصى" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
                                                                 <option></option>
                                                                 <?php foreach ( mo_generate_participants_range() as $key => $value ) { ?>
                                                                 <option value="<?php echo $key; ?>"><?php echo $value; ?></option>
