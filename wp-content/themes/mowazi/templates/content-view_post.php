@@ -140,6 +140,15 @@ if ( !empty($user_bookmarks) ) {
                                     <span><i class="icon-history"></i></span>
                                     
                                     <h4 class="info-title">تاريخ الإسناد</h4>
+                                    
+                                    <h4 class="info-title age-title">السن</h4>
+                                    <span class="info-subtitle"><?php echo $post_age_range; ?></span> <br>
+                                    <h4 class="info-title age-title">العدد</h4>
+                                    <span class="info-subtitle"><?php echo $post_participants; ?> - <?php echo $post_max_participants; ?> </span><br>
+                                    <h4 class="info-title age-title">المدة الزمنية :</h4>
+                                    <span class="info-subtitle"><?php echo $post_duration_hrs; ?></span><span>ساعه</span>
+                                    <span class="info-subtitle"><?php echo $post_duration; ?></span><span>دقيقة</span>
+                            
                                 </div>
                                 <p class="info-subtitle"><?php echo $clones_count; ?> عضو استنسخ من هذا النشاط</p>
 
