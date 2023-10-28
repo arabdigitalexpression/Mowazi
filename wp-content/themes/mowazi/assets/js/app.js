@@ -925,6 +925,7 @@ function copyTextToClipboard(text) {
 		);
 
 		$(document).on('click', '.btn-upload-attach', function (e) {
+			jQuery(this).parent().addClass("will-remove");
 			uploadAttach(e);
 		});
 
