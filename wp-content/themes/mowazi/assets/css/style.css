@@ -740,10 +740,10 @@ form[id^='formComment'] .btn-sm { margin-bottom: 20px; margin-right: auto; }
 
 .card.card-author_history .card-header .info { max-width: 100%; }
 
-.card.card-author_history .card-header .info div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 12px; }
+.card.card-author_history .card-header .info div { display: -webkit-box; display: -ms-flexbox; display: block; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 12px; }
 
-.card.card-author_history .card-header .info div span { display: -webkit-box; display: -ms-flexbox; display: flex; width: 35px; height: 35px; border-radius: 50%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #ffc055; margin-left: 15px; font-size: 1.2142857143rem; }
-
+.card.card-author_history .card-header .info div span { display: -webkit-box; display: -ms-flexbox; display: inline-flex; width: 35px; height: 35px; border-radius: 50%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: #ffc055; margin-left: 15px; font-size: 1.2142857143rem; }
+.age-title {display: inline-block;}
 .card.card-author_history .card-header .info .info-title { margin-bottom: 3px; }
 
 .card.card-author_history .card-header .info .info-subtitle { max-width: 90%; margin: auto; }
