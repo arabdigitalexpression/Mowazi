@@ -197,7 +197,7 @@ $user_email = $profile_user->user_email;
                                             </div>
                                             <div class="form-group form-group_setting">
                                                 <label for="bdate">تاريخ الميلاد</label>
-                                                <input type="text" name="bdate" id="bdate" disabled="disabled" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا" class="form-control" value="<?php echo $user_bdate; ?>">
+                                                <input type="date" onkeydown="return false" name="bdate" id="bdate" disabled="disabled" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا" class="form-control" value="<?php echo $user_bdate; ?>">
                                             </div>
                                             <div class="change-pass_link">
                                                 <p>كلمة المرور</p>
