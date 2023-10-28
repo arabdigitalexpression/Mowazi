@@ -763,7 +763,7 @@ function copyTextToClipboard(text) {
 			}
 		});
 		$(document).on('click','#list-settings',function() {
-			$('.avatar.changeable .change-photo').toggleClass('editable');
+			// $('.avatar.changeable .change-photo').toggleClass('editable');
 			var dataAvatar = $('.avatar.changeable').attr('data-avatar');
 			var cssAvatar = $('.avatar.changeable').css('background-image').replace(/^url\(['"](.+)['"]\)/, '$1');
 			if(dataAvatar != cssAvatar){
@@ -830,6 +830,7 @@ function copyTextToClipboard(text) {
 		});
 
 		$(document).on('click', 'a.save-settings', function (e) {
+			jQuery('.loading-wrapper').removeClass('d-none');
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			var name = $('#fullname').val();
