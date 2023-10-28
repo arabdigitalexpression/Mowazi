@@ -20,7 +20,7 @@
     .home-section-1.center-img{
         background-size: 520px;
         background-position: -20px 60px;
-        padding-top: 80px;
+        /* padding-top: 80px; */
         padding-bottom: 100px;
     }
 }

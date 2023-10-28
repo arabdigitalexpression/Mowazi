@@ -168,7 +168,7 @@ header.header-post .container-post__left_side .btn i.icon-download, header.heade
 
 header.header-post .container-post__left_side .btn i.icon-preview { font-size: 0.7142857143rem; }
 
-#nav_wrap.relative-header header { position: relative; }
+/* #nav_wrap.relative-header header { position: relative; } */
 
 #nav_wrap.relative-header ~ main { padding-top: 0; }
 
@@ -1963,7 +1963,7 @@ main .container-post__left_side { display: -webkit-box; display: -ms-flexbox; di
 
 .exe { height: 35px; min-width: 40px; background: #f4f4f4; border: 1px solid #d9d9d9; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 0.7142857143rem; font-family: "Tajawal", sans-serif; text-transform: uppercase; margin-left: 8px; margin-bottom: 0; padding: 0 10px; }
 
-.postioning-toast { position: fixed; top: 100px; right: 100px; z-index: 10000; }
+.postioning-toast { position: fixed; top: 40px; right: 30px; z-index: 10000; }
 
 .postioning-toast .toast-style { color: #fff; }
 
@@ -1975,13 +1975,14 @@ main .container-post__left_side { display: -webkit-box; display: -ms-flexbox; di
 
 .postioning-toast .toast-style .toast-body button:focus { outline: none; }
 
-.postioning-toast .toast-style.success_toast { color: #00b4a6; background-color: #00b4a633; }
+.toast-style{cursor: pointer;}
+.postioning-toast .toast-style.success_toast { color: #fff; background-color: #28a745; border: 1px white solid; }
 
-.postioning-toast .toast-style.success_toast .toast-body { border: 1px solid #00b4a6; }
+.postioning-toast .toast-style.success_toast .toast-body { margin: 0; }
 
-.postioning-toast .toast-style.error_toast { color: #ff595a; background-color: #ff595a33; }
+.postioning-toast .toast-style.error_toast { color: #fff; background-color: #ff595a; border: 1px white solid; }
 
-.postioning-toast .toast-style.error_toast .toast-body { border: 1px solid #ff595a; }
+.postioning-toast .toast-style.error_toast .toast-body { border: 1px solid #ff595a;margin: 0; }
 
 .no-noti { color: #000; text-align: center; width: 100%; margin-bottom: 8px; }
 

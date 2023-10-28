@@ -18,7 +18,7 @@
                             <input type="text" class="form-control" aria-describedby="name" placeholder="اسم العائلة" name="lastname" data-bv-notempty="true"  data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
                         </div> -->
                         <div class="form-group">
-                            <input type="text" class="form-control" aria-describedby="username" placeholder="اسم المستخدم" name="username" data-bv-notempty="true" data-bv-remote="true" data-bv-remote-name="username" data-bv-remote-type="POST" data-bv-remote-message="اسم المستخدم مسجل من قبل" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
+                            <input type="text" class="form-control" aria-describedby="username" placeholder="اسم المستخدم" name="username" data-bv-notempty="true" data-bv-remote="true" data-bv-remote-name="username" data-bv-remote-type="POST" data-bv-remote-message="اسم المستخدم مسجل من قبل او به مسافة فارغة" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control" aria-describedby="email" placeholder="البريد الإلكتروني" name="email" data-bv-notempty="true" data-bv-remote="true" data-bv-remote-name="emailnumber" data-bv-remote-type="POST" data-bv-remote-message="البريد الإلكتروني مسجل من قبل" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا" data-bv-emailaddress-message="ادخل عنوان بريد الكتروني صحيح">

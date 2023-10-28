@@ -22,7 +22,7 @@
                         </select>
                     </div>
                     <div class="form-group form-group_alt">
-                        <textarea class="form-control" name="notes" cols="50" rows="4" placeholder="ملاحظات" data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا"></textarea>
+                        <textarea class="form-control" name="notes" cols="50" rows="4" placeholder="ملاحظات" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا"></textarea>
                     </div>
                     <div>
                         <button class="btn btn-outline-dark" data-dismiss="modal" aria-label="Close">إلغاء</button>

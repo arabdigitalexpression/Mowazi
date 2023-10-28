@@ -160,18 +160,7 @@
                                     <!-- workshop activities -->
                                     <div class="form-group form-group_alt form-group_select2AjaxActivities form-group_expand">
 
-                                    <select multiple="multiple" style="width: 100%;" name="workshopActivities" data-placeholder="الانشطة " data-bv-notempty="true" data-bv-notempty-message="هذا الحقل لا يمكن ان يكون فارغا">
-                                        <option></option>
-                                        <?php
-                                            foreach($activities as $key => $activity_id):
-                                                $activity_title = get_the_title($activity_id);
-                                            ?>
-                                            <option data-activity-id = "<?php echo $activity_id; ?>" 
-                                            value="<?php echo $activity_id; ?>">
-                                                <?php echo $activity_title; ?>
-                                            </option>
-                                        <?php endforeach;?>
-                                    </select>
+                                  
 
 
                                         <!-- <select style="width:100%;" name="workshopActivities" id="workshopActivities" class="form-control"
@@ -313,7 +302,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group form-group_alt ">
-                                        <textarea class="form-control" name="goals" placeholder="الاهداف" ></textarea>
+                                        <textarea class="form-control" name="goals" placeholder="الاهداف"></textarea>
                                     </div>
                                 </form>
                             </div>
