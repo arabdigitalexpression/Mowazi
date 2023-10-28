@@ -168,7 +168,7 @@ header.header-post .container-post__left_side .btn i.icon-download, header.heade
 
 header.header-post .container-post__left_side .btn i.icon-preview { font-size: 0.7142857143rem; }
 
-#nav_wrap.relative-header header { position: relative; }
+/* #nav_wrap.relative-header header { position: relative; } */
 
 #nav_wrap.relative-header ~ main { padding-top: 0; }
 
