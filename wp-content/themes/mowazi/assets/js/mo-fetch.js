@@ -2251,6 +2251,7 @@ function updateUser(e) {
 			}
 		})
 		.then(function (data) {
+			jQuery('.loading-wrapper').addClass('d-none');
 			toastInit('success_toast', data.message);
 			console.log(data);
 		})
@@ -2315,7 +2316,7 @@ function uploadAttach(e) {
 		})
 		.then(function (data) {
 			toastInit('success_toast', data.message);
-			jQuery('.wrapper-file-added').remove();
+			jQuery('.will-remove').remove();
 			if(!data.type){
 				data.type='Link';
 			}
@@ -2610,10 +2611,7 @@ function clonePost(e) {
 				toastInit('error_toast', error);
 			}
 		});
-
-	}
-	
-
+}
 jQuery(".postioning-toast").on('click', function(){
     jQuery(this).children().remove();
 });
