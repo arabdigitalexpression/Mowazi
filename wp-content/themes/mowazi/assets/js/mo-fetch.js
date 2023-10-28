@@ -2615,3 +2615,23 @@ function clonePost(e) {
 jQuery(".postioning-toast").on('click', function(){
     jQuery(this).children().remove();
 });
+
+jQuery('#min_participants').on('change', function() { 
+    toastInit('success_toast', 'الحد الادنى '+this.value);
+});
+
+jQuery('#max_participants').on('change', function() {
+    var conceptName = jQuery('#min_participants').find(":selected").val();
+    if(conceptName > 0){
+        if(this.value < conceptName){
+            toastInit('error_toast', 'الحد الأقصي يجب ان يكون اكبر من الحد الادنى');
+            jQuery("#max_participants").val('');
+        }
+        else{
+            toastInit('success_toast', 'الحد الأقصي '+this.value);
+        }
+    }else{
+        toastInit('error_toast', 'يجب اختيار الحد الادنى اولا');
+        jQuery("#max_participants").val('');
+    }
+});
