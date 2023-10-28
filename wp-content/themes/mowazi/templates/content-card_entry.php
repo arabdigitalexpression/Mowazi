@@ -16,8 +16,8 @@ $steps = get_post_meta( $entry_id, 'mo_entry_group', true );
             <!-- <input class="workshop_partition_content--title" type="text" placeholder=<?php if ( $post_type == 'workshops' ) { echo $title; } else { echo 'نشاط'; } ?> value="<?php if ( $post_type == 'workshops' ) { echo $title; } else { echo 'نشاط'; } ?>"> -->
         </div>
         <div>
-            <button onclick="toggleExpand(this)" class="expand-collapse-component"><i class="icon-notes"></i>expand/collapse item</button>
-            <a href="#notesSidebar"><i class="icon-notes"></i></a>
+            <a style="cursor: pointer;" onclick="toggleExpand(this)" class="expand-collapse-component" title="expand/collapse item"><i class="icon-notes"></i></a>
+            <!-- <a href="#notesSidebar"><i class="icon-notes"></i></a> -->
             <a href="#commentsSidebar"><i class="icon-comment"></i></a>
             <a href="#materialSidebar"><i class="icon-material"></i></a>
             <a href="#attachesSidebar"><i class="icon-sources-alt"></i></a>       
