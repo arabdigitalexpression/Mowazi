@@ -240,3 +240,20 @@ if ( $profile_id == $user_id ) {
     get_template_part('modals/modal-change_pass');     
 }
 ?>
+<script>
+var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth() + 1; //January is 0!
+	var yyyy = today.getFullYear() - 11;
+
+	if (dd < 10) {
+	   dd = '0' + dd;
+	}
+
+	if (mm < 10) {
+	   mm = '0' + mm;
+	} 
+
+	today = yyyy + '-' + mm + '-' + dd;
+	document.getElementById("bdate").setAttribute("max", today);
+</script>
