@@ -2251,6 +2251,7 @@ function updateUser(e) {
 			}
 		})
 		.then(function (data) {
+			jQuery('.loading-wrapper').addClass('d-none');
 			toastInit('success_toast', data.message);
 			console.log(data);
 		})
@@ -2611,7 +2612,6 @@ function clonePost(e) {
 			}
 		});
 }
-
 jQuery(".postioning-toast").on('click', function(){
     jQuery(this).children().remove();
 });

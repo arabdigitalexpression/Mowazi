@@ -1877,7 +1877,7 @@ main .container-post__left_side { display: -webkit-box; display: -ms-flexbox; di
             filter: blur(0px);
     font-size: 3.1428571429rem; } }
 
-.loading-wrapper { position: fixed; height: 100vh; width: 100vw; z-index: 10000; background: rgba(255, 255, 255, 0.9); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 85px; }
+.loading-wrapper { position: fixed; height: 100vh; width: 100vw; z-index: 10000; background: rgba(255, 255, 255, 0.9); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; top: 0; }
 
 .loading-wrapper .lds-ring { display: inline-block; position: relative; width: 64px; height: 64px; margin-bottom: 187px; }
 
