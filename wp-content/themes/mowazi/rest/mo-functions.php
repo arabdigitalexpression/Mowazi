@@ -1448,7 +1448,7 @@ function mo_get_search_side( $request_info ) {
 	$output_html = '';
 
 	$result_posts_args = array(
-		'post_type'         =>  array( 'activities', 'workshops' ),
+		'post_type'         =>  array( 'activities' ),
 		'post_status'       =>  'publish',
 		'posts_per_page'    =>  -1,
 		//'post_parent'       =>  0,
