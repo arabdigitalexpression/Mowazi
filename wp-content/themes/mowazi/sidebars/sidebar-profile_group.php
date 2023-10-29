@@ -58,7 +58,7 @@ if ( !empty( $group_members ) && is_array( $group_members ) ) {
                     <?php } ?>
 
                     <?php if ( $members_count !== 0 ) { ?>
-                    <p class="info-subtitle"><?php echo $members_count; ?> عضو في المجموعة</p>
+                    <p class="info-subtitle"><?php echo $members_count-1; ?> عضو في المجموعة</p>
                     <?php } ?>
                 </div>
                 <!-- end of user preview component -->
